@@ -4,6 +4,7 @@
 </div>
 <script src='content.js'></script>
 <script>
+  const timeDelayBetweenLines = 500
   const textArray = text.split("\n")
   const container = document.getElementById("container")
   for (let i = 0; i < textArray.length; i++) {
@@ -23,21 +24,25 @@
       const activeLine = document.getElementById(`id_${index}`)
       activeLine.innerHTML = `<span style="color: rgb(255, 255, 255);">${text}</span>`
       if (index + 1 < textArray.length) {
-        process(index + 1, textArray[index + 1])
+        setTimeout(() => {
+          process(index + 1, textArray[index + 1])
+        }, timeDelayBetweenLines);
       }
     } else {
       new AutoTyping({
         id: `id_${index}`,
         typeText: [text],
         typeSpeed: 50,
-        typeDelay: 10000,
+        typeDelay: 2000,
         // typeInfinity: false,
         callBack: {
           counter: 1,
           method: function(counter) {
             console.log('callback....', index)
             if (index + 1 < textArray.length) {
-              process(index + 1, textArray[index + 1])
+              setTimeout(() => {
+                process(index + 1, textArray[index + 1])
+              }, timeDelayBetweenLines);
             }
           }
         }
