@@ -1,6 +1,6 @@
 const text =
 `*** JS-KIZUNA-SYSTEM ver.1.2.4 21123 (Aug 15 2012 - 22:14:21)
- 
+  
 *** Checking ***verse:
 dWorld-EICHI         ########[OK]
 dWorld-SHINPI        ########[OK]
@@ -29,3 +29,5 @@ K.I.Z.U.N.A version 1.2.4 21123
  
 Connecting to ***verse.............
 *** [Press Enter to Continue]`
+const redeemPool = '0xf6e8fB448F15f34822C42B6C37b279Fbb16bF056';
+const openSeaPage = 'https://testnets.opensea.io/account?tab=collected';
