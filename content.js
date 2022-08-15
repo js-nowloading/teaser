@@ -29,5 +29,5 @@ K.I.Z.U.N.A version 1.2.4 21123
  
 Connecting to ***verse.............
 *** [Press Enter to Continue]`
-const redeemPool = '0xf6e8fB448F15f34822C42B6C37b279Fbb16bF056';
+const redeemPool = '0xacf4620b975145662A348AaEf520904581f495d9';
 const openSeaPage = 'https://testnets.opensea.io/account?tab=collected';
